@@ -1,4 +1,4 @@
-package br.com.ifsc.blocodenotas;
+package vision;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+
+import br.com.ifsc.blocodenotas.R;
 
 public class MainActivity extends AppCompatActivity {
 
