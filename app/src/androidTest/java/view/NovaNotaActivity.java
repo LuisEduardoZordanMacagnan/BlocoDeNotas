@@ -1,2 +1,3 @@
-package vision;public class NovaNotaActivity {
+package view;
+public class NovaNotaActivity {
 }
