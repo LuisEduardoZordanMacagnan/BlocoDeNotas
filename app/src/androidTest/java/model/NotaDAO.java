@@ -16,12 +16,16 @@ public class NotaDAO {
         this.sqLiteDatabase = c.openOrCreateDatabase("banco", Context.MODE_PRIVATE, null);
     }
     public boolean insert(Nota n){
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("titulo", n.getTitulo());
-        contentValues.put("texto", n.getTexto());
-        sqLiteDatabase.insert("notas", null, contentValues);
-
-        return false;
+        try {
+            ContentValues contentValues = new ContentValues();
+            contentValues.put("titulo", n.getTitulo());
+            contentValues.put("texto", n.getTexto());
+            Long i = (Long) sqLiteDatabase.insert("notas", null, contentValues);
+            n.setId(i);
+            return true;
+        } catch (RuntimeException e){
+            return false;
+        }
     }
 
     public boolean update(Nota n){
