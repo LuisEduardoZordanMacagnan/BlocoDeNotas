@@ -1,8 +1,13 @@
-package model;
+package br.com.ifsc.blocodenotas.model;
 public class Nota {
     private Long id;
     private String titulo;
     private String texto;
+
+    public Nota(String titulo, String texto) {
+        this.titulo = titulo;
+        this.texto = texto;
+    }
 
     public void setId(Long id){
         this.id = id;

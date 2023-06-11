@@ -10,36 +10,60 @@
         android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="82dp"
         android:text="Salvar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalvar3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSalvar2"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalvar2" />
+
+    <Button
+        android:id="@+id/btnSalvar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTexto" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <Button
+        android:id="@+id/btnSalvar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:text="Deletar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSalvar" />
 
     <EditText
         android:id="@+id/editTextTexto"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="39dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="39dp"
         android:ems="10"
         android:hint="..."
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvar2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTitulo" />
 
     <EditText
         android:id="@+id/editTextTitulo"
-        android:layout_width="378dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="9dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginStart="13dp"
+        android:layout_width="364dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="9dp"
         android:ems="10"
         android:hint="Titulo"
         android:inputType="textPersonName"
@@ -47,5 +71,6 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
 </android.support.constraint.ConstraintLayout>
